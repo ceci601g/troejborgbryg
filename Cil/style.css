@@ -1,0 +1,683 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    }
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    /* nav bar*/ 
+    nav{
+        background: rgb(255, 216, 221);
+        height: 80px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+    
+    }
+
+    .logo{
+        width: 350px;
+    }
+
+    .cart1:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+
+    .cart1 {
+        padding-top: 10px;
+        max-width: 60px;
+        max-height: 60px;
+    }
+    nav ul{
+        float: right;
+        margin-right:  20px;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+    nav ul li a{
+        color: black;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+    }
+
+    nav ul li a:hover{
+        color:  rgb(255, 0, 170);
+    }
+
+    
+    .checkbtn{
+        font-size: 30px;
+        color: black;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    @media (max-width: 952px){
+        label.logo{
+            font-size: 30px;  
+            padding-left: 50px;
+        }
+        nav ul li a{
+            font-size: 16px;
+    
+        }
+    }
+    @media (max-width: 858px){
+        .checkbtn{
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: rgb(255, 216, 221);
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+        a:hover,a.active{
+            background: none;
+            color: #000000;
+        }
+        #check:checked ~ ul{
+            left: 0;
+    
+        }  
+    }
+
+    .scroll-to-top {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: rgb(255, 81, 197);
+        color: #fff;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      
+      .scroll-to-top:hover {
+        background-color:  rgb(255, 0, 170);
+      }
+      
+      body:hover .scroll-to-top {
+        display: block;
+      }
+
+    /* top*/ 
+    
+    .top {
+        width: 100%;
+        height: 750px;
+        background-color: rgb(255, 216, 221);
+        display: flex;
+    }
+    .top .top1 {
+        width: 50%;
+        height: 50%;
+        max-width: 50%;
+        max-height: 50%;
+    }
+    .top .top1 h2 {
+        margin-top: 200px;
+    }
+    .top .top2 {
+        width: 50%;
+        height: 50%;
+        max-width: 50%;
+        max-height: 50%;
+    }
+    .top .top2 img {
+        width: 1000px;
+        height: 900px;
+        float: right;
+    }
+    .top h2 {
+        color: rgb(255, 81, 197);
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .top h1 {
+        color: rgb(255, 81, 197);
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .top p {
+        color: rgb(255, 81, 197);
+        text-align: center;
+        font-size: 20px;
+    }
+    /* blueberry*/ 
+
+    .blueberry{
+        width: 100%;
+        height: 1360px;
+        background-image: url(img/Bluewave.png);
+        display: flex;
+        
+    }
+    .blueberry .blueberry1{
+        width: 50%;
+        color: rgb(57, 57, 206);
+        height: 50%;
+        max-width: 50%;
+        max-height: 50%;
+    }
+    .blueberry .blueberry1 h3{
+        text-align: center;
+        color: rgb(57, 57, 206);
+        margin-top: 300px;
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .blueberry .blueberry1 p{
+        text-align: center;
+        color: rgb(57, 57, 206);
+        font-size: 20px;
+
+    }
+    .blueberry .blueberry2{
+        width: 50%;
+        height: 50%;
+        max-width: 50%;
+        max-height: 50%;
+        margin-top: 650px;
+        margin-right: 200px;
+    }
+
+    .blueberry .blueberry2 img{
+        width: 350px;
+        height: 500px;
+        float: right;
+    }
+    .blueberry .blueberry2 h4{
+        float: right;
+        margin-top: -30px;
+        margin-right: -250px;
+        font-size: 25px;
+        color: blue;
+    }
+    #nyheder {
+        text-align: center;
+        font-size: 50px;
+        color: rgb(255, 81, 197);
+        background-color: rgb(255, 216, 221);
+    }
+    /* lemon*/ 
+
+    .yellow{
+        width: 100%;
+        height: 1360px;
+        background-image: url(img/yellowwave2.png);
+        display: flex;
+        
+    }
+    .yellow .yellow2{
+        width: 50%;
+        height: 50%;
+        max-width: 50%;
+        max-height: 50%;
+    }
+    .yellow .yellow2 h3{
+        text-align: center;
+        color: rgb(255, 206, 76);
+        margin-top: 700px;
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .yellow .yellow2 p{
+        text-align: center;
+        color: rgb(255, 206, 76);
+        font-size: 20px;
+    }
+    .yellow .yellow1{
+        width: 50%;
+        height: 50%;
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .yellow .yellow1 img{
+        width: 350px;
+        height: 500px;
+        float: left;
+        margin-left: 200px;
+        margin-top: 200px;
+    }
+
+    /*grape*/ 
+
+
+    .purple{
+        width: 100%;
+        height: 1440px;
+        background-image: url(img/purplewave1.png);
+        display: flex;
+        
+    }
+
+    .purple .purple1{
+        width: 50%;
+        height: 50%;
+        max-width: 50%;
+        max-height: 50%;
+    }
+    .purple .purple1 h3{
+        text-align: center;
+        color: rgb(225, 4, 250);
+        margin-top: 350px;
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .purple .purple1 p{
+        text-align: center;
+        color: rgb(225, 4, 250);
+        font-size: 20px;
+    }
+    .purple .purple2{
+        width: 50%;
+        height: 50%;
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .purple .purple2 img{
+        width: 350px;
+        height: 500px;
+        margin-left: 375px;
+        margin-top: 750px;
+    }
+
+    /*produkter*/ 
+
+    #produkter {
+        background-color: rgb(255, 216, 221);
+        color: rgb(255, 81, 197);
+        text-align: center;
+        font-size: 80px;
+        padding-top: 100px;
+    }
+    .gift{
+        width: 100%;
+        height: 1440px;
+        background-image: url(img/whitewave.png);
+        display: flex;
+        
+    }
+    .gift .gift1{
+        width: 50%;
+        height: 50%;
+        max-width: 50%;
+        max-height: 50%;
+        
+    }
+    .gift .gift1 h3{
+        text-align: center;
+        color: rgb(255, 81, 197);
+        margin-top: 750px;
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .gift .gift1 p{
+        text-align: center;
+        color: rgb(255, 81, 197);
+        font-size: 20px;
+    }
+    .gift .gift2{
+        width: 50%;
+        height: 50%;
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .gift .gift2 img{
+        width: 950px;
+        height: 500px;
+        margin-top: 750px;
+    }
+
+    .gift-button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 81, 197);
+        border: 2px solid rgb(255, 81, 197);
+        background: none; 
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-left: 415px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+      }
+
+      /*alcohol frie øl*/ 
+
+      #alkoholdfrie {
+        color: rgb(255, 81, 197);
+        text-align: center;
+        font-size: 80px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: rgb(252,250,254);
+    }
+
+    .sortiment{
+        width: 100%;
+        height: 1440px;
+        display: flex;
+        text-align: center;
+        background-image: url(img/whitewaveend.png);
+        
+    }
+
+    .sortiment .sortiment1 {
+        width: 33%;
+        height: 33%;
+        max-width: 33%;
+        max-height: 33%;
+    }
+
+    .sortiment .sortiment2 {
+        width: 33%;
+        height: 33%;
+        max-width: 33%;
+        max-height: 33%;
+    }
+
+    .sortiment .sortiment3 {
+        width: 33%;
+        height: 33%;
+        max-width: 33%;
+        max-height: 33%;
+    }
+
+    .sortiment img {
+        width: 300px;
+        height: 450px;
+        margin-left: 50px;
+    }
+
+    .sortiment img:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+
+    .sortiment h4 {
+        text-align: center;
+        color: rgb(255, 81, 197);
+        font-size: 30px;
+    }
+
+    .sortiment p {
+        text-align: center;
+        color: rgb(255, 81, 197);
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sortiment-button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 81, 197);
+        border: 2px solid rgb(255, 81, 197);
+        background: none; 
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-bottom: 100px;
+      }
+
+      .mere-button {
+        background-color:rgb(255, 216, 221); ;
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 81, 197);
+        border: 2px solid rgb(255, 81, 197);
+        background: none; 
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-bottom: 100px;
+    }
+
+        /*hvorfor vælge alcoholfri øl ?*/ 
+      .hvorfor{
+        width: 100%;
+        height: 3000px;
+        background-image: url(img/hvorfor.png);
+        background-repeat: no-repeat;
+        background-color: rgb(255, 216, 221);
+        background-position: right center;
+        
+    }
+
+    .hvorfor p {
+        text-align: center;
+        color: rgb(255, 81, 197);
+        font-size: 30px;
+        padding: 10px;
+        margin-right: 100px;
+    }
+
+    .hvorfor1 {
+        padding-top: 600px;
+        padding-left: 1100px;
+    }
+
+    .hvorfor2 {
+        padding-top: 300px;
+        padding-left: 800px;
+    }
+
+    .hvorfor3 {
+        padding-top: 600px;
+        padding-right: 400px;
+    }
+
+    .hvorfor4 {
+        padding-top: 100px;
+       padding-left: 800px;
+    }
+
+    #hvorforheader {
+        text-align: center;
+        color: rgb(255, 81, 197);
+        font-size: 50px;
+        background-color: rgb(255, 216, 221);
+        padding-top: 50px;
+    }
+
+    .omos{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        text-align: center;
+        background-image: url(img/greenwave.png);
+        background-repeat: no-repeat;
+        background-color: rgb(255, 216, 221);
+    }
+
+    .omos .omos1 {
+        width: 66%;
+        height: 66%;
+        max-width: 66%;
+        max-height: 66%;
+    }
+
+    .omos1{
+        padding-top: 400px;
+        color: rgb(255, 81, 197);
+    }
+
+    .omos .omos2 {
+        width: 33%;
+        height: 33%;
+        max-width: 33%;
+        max-height: 33%;
+        margin-top: 600px;
+        margin-right: 200px;
+    }
+    .omos .omos2 img {
+        max-width: 800px;
+        max-height: 800px;
+    }
+    #omos{
+        color: rgb(255, 81, 197);
+        text-align: center;
+        font-size: 80px;
+        padding-top: 100px;
+        padding-bottom: 0px;
+        background-color: rgb(255, 216, 221);
+    }
+
+    .omos .omos1 p {
+        text-align: center;
+        color: rgb(255, 81, 197);
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .omos3{
+        width: 100%;
+        height: 1200px;
+        display: flex;
+        text-align: center;
+        background-image: url(img/greenwaveend.png);
+        background-repeat: no-repeat;
+        background-color: rgb(255, 216, 221);
+    }
+    .delmedos {
+        background-color: rgb(255, 216, 221);
+    }
+    .delmedos h2 {
+        text-align: center;
+        color: rgb(255, 81, 197);
+        font-size: 40px;
+        
+    }
+    .delmedos p {
+        padding-top: 30px;
+        text-align: center;
+        color: rgb(255, 81, 197);
+        font-size: 20px;
+    }
+    .instagram{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        text-align: center;
+        background-color: rgb(255, 216, 221);
+        
+    }
+    .instagram img{
+        width: 640px;
+        height: 900px;
+        
+    }
+    .instagram .instagram1 {
+        width: 33%;
+        height: 33%;
+        max-width: 33%;
+        max-height: 33%;
+    }
+
+    .instagram .instagram2 {
+        width: 33%;
+        height: 33%;
+        max-width: 33%;
+        max-height: 33%;
+    }
+
+    .instagram .instagram3 {
+        width: 33%;
+        height: 33%;
+        max-width: 33%;
+        max-height: 33%;
+    }
+
+
+.footer{
+width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .ikurv{
+        width: 100%;
+        height:850px;
+        background-color: rgb(255, 216, 221);
+        text-align: center;
+    }
+
+    .ikurv h2{
+        padding-top: 150px;
+        font-size: 50px;
+    }
+    
+    .ikurv img{
+        display: inline-block;
+        margin-top: 30px;
+        width: 150px;
+    }
+    
+    .kurvbutton {
+        background-color:  rgb(255, 0, 140); /* Lys rød baggrundsfarve */
+        border: 1px solid rgb(255, 0, 140); /* Rød kant */
+        padding: 18px 45px; /* Tilpas polstring efter behov */
+        border-radius: 5px; /* Runde hjørner */
+        font-size: 20px; /* Størrelse på teksten */
+        font-weight: bold; /* Fed tekst */
+        cursor: pointer; /* Ændrer markøren til en hånd, når man svæver over knappen */
+      }
+      
+      /* Ændrer knappens udseende, når musen er over den */
+      .kurvbutton:hover {
+        background-color: rgb(255, 92, 182); /* Ændrer baggrundsfarven ved hover til en mørkere rød */
+        color: #000000; /* Ændrer tekstfarven ved hover til hvid */
+      }
